@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository>C:\Users\Netec\.m2\repository</localRepository>
+    <pluginGroups></pluginGroups>
+
+    <proxies>
+        <!--
+           <proxy>
+                <id>proxyvip</id>
+                <active>true</active>
+                <protocol>http</protocol>
+                <host>proxyvip.igrupobbva</host>
+                <port>8080</port>
+            </proxy>
+    -->
+    </proxies>
+
+    <servers>
+        <server>
+            <id>artifactory-APX</id>
+            <username>USER_PROFILE_NAME_ARTIFACTORY</username>
+            <password>API_KEY_ARTIFACTORY</password>
+        </server>
+    </servers>
+
+    <mirrors></mirrors>
+
+    <profiles>
+        <profile>
+            <id>apx-dev</id>
+            <repositories>
+                <repository>
+                    <id>artifactory-APX</id>
+                    <url>https://globaldevtools.bbva.com/artifactory-api/repository-apx-dev</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>artifactory-APX</id>
+                    <url>https://globaldevtools.bbva.com/artifactory-api/repository-apx-dev</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>apx-dev</activeProfile>
+    </activeProfiles>
+</settings>

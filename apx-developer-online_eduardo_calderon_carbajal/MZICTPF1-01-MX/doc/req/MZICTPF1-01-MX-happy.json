@@ -1,0 +1,10 @@
+{
+	"headers": {
+		"logical-transaction-code": "MZICTPF1",
+		"version-code": "01",
+		"country-code": "MX"
+	},
+	"body": {
+		"idProduct": 1
+	}
+}

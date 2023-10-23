@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction xmlns="http://www.w3schools.com" transactionName="MZICTPF1" application="MZIC" version="01" country="MX" language="ES">
+	<paramsIn>
+		<parameter order="1" name="idProduct" mandatory="1" type="Long" size="20"/>
+	</paramsIn>
+	<paramsOut>
+		<dto order="1" name="Product" mandatory="1" package="com.bbva.mzic.dto.pfinal.sub1.sub2" artifactId="MZICCPF1">
+			<parameter order="1" name="idProduct" mandatory="1" type="Long" size="20"/>
+			<parameter order="2" name="title" mandatory="1" type="String" size="50"/>
+			<parameter order="3" name="description" mandatory="1" type="String" size="50"/>
+			<parameter order="4" name="amount" mandatory="1" type="Double" size="20"/>
+			<parameter order="5" name="disable" mandatory="1" type="String" size="20"/>
+		</dto>
+	</paramsOut>
+	<description>"5"</description>
+</transaction>
